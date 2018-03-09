@@ -1,8 +1,9 @@
 package instruments;
 
 import enums.DrumType;
+import interfaces.IPlay;
 
-public class Drum {
+public class Drum implements IPlay {
 
     private DrumType drumType;
 
@@ -12,5 +13,10 @@ public class Drum {
 
     public DrumType getDrumType() {
         return drumType;
+    }
+
+    @Override
+    public String play() {
+        return "bang bang";
     }
 }

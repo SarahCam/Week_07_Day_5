@@ -20,4 +20,8 @@ public class TestDrum {
         assertEquals(DrumType.SNARE, drum.getDrumType());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("bang bang", drum.play());
+    }
 }
