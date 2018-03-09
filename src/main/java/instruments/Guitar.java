@@ -1,8 +1,9 @@
 package instruments;
 
 import enums.GuitarType;
+import interfaces.IPlay;
 
-public class Guitar {
+public class Guitar implements IPlay {
 
     private GuitarType type;
     private int stringCount;
@@ -18,5 +19,9 @@ public class Guitar {
 
     public int getStringCount() {
         return stringCount;
+    }
+
+    public String play() {
+        return "strum strum";
     }
 }
