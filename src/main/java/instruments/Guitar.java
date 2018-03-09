@@ -21,6 +21,7 @@ public class Guitar implements IPlay {
         return stringCount;
     }
 
+    @Override
     public String play() {
         return "strum strum";
     }
