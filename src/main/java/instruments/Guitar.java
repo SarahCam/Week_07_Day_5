@@ -4,13 +4,19 @@ import enums.GuitarType;
 
 public class Guitar {
 
-    private GuitarType guitarType;
+    private GuitarType type;
+    private int stringCount;
 
-    public Guitar(GuitarType guitarType) {
-        this.guitarType = guitarType;
+    public Guitar(GuitarType type, int stringCount) {
+        this.type = type;
+        this.stringCount = stringCount;
     }
 
     public GuitarType getType() {
-        return guitarType;
+        return type;
+    }
+
+    public int getStringCount() {
+        return stringCount;
     }
 }

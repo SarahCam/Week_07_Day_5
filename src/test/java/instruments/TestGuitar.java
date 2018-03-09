@@ -12,11 +12,16 @@ public class TestGuitar {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar(GuitarType.ACCOUSTIC);
+        guitar = new Guitar(GuitarType.ACCOUSTIC, 6);
     }
 
     @Test
-    public void canGetGuitarType() {
+    public void canGetType() {
         assertEquals(GuitarType.ACCOUSTIC, guitar.getType());
+    }
+
+    @Test
+    public void canGetStringCount() {
+        assertEquals(6, guitar.getStringCount());
     }
 }
