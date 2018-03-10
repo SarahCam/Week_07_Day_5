@@ -46,14 +46,26 @@ public class TestShop {
 
     @Test
     public void canAddPianoToStock() {
-        shop.addStock(piano);
+        shop.addStockItem(piano);
         assertEquals(1, shop.getStockCount());
         assert(shop.getStockItems().get(0) instanceof Piano);
     }
 
     @Test
     public void canAddAccessoryToStock() {
-        shop.addStock(musicSheet);
+        shop.addStockItem(musicSheet);
+        assertEquals(1, shop.getStockCount());
+        assert(shop.getStockItems().get(0) instanceof Accessory);
+    }
+
+    @Test
+    public void canRemoveItemFromStock() {
+        shop.addStockItem(piano);
+        shop.addStockItem(musicSheet);
+        assertEquals(2, shop.getStockCount());
+        assert(shop.getStockItems().get(0) instanceof Piano);
+        assert(shop.getStockItems().get(1) instanceof Accessory);
+        shop.removeStockItem(piano);
         assertEquals(1, shop.getStockCount());
         assert(shop.getStockItems().get(0) instanceof Accessory);
     }

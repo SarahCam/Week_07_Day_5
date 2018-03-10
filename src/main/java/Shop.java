@@ -25,7 +25,11 @@ public class Shop {
         return stockItems.size();
     }
 
-    public void addStock(ISell stockItem) {
+    public void addStockItem (ISell stockItem) {
         stockItems.add(stockItem);
+    }
+
+    public void removeStockItem(ISell stockItem) {
+        stockItems.remove(stockItem);
     }
 }
