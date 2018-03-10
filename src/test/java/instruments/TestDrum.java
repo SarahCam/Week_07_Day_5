@@ -16,6 +16,7 @@ public class TestDrum {
                         InstrumentMake.YAMAHA,
                         InstrumentMaterial.FIBREGLASS,
                         InstrumentType.PERCUSSION,
+                        70.00,
                         DrumType.SNARE);
     }
 

@@ -1,8 +1,9 @@
 package stock;
 
 import enums.*;
+import interfaces.ISell;
 
-public class Instrument {
+public class Instrument implements ISell {
 
     private InstrumentColour colour;
     private InstrumentMake make;
@@ -34,5 +35,10 @@ public class Instrument {
 
     public InstrumentType getType() {
         return type;
+    }
+
+    @Override
+    public double calculateMarkUp() {
+        return wholeSalePrice * 120/100;
     }
 }

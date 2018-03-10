@@ -16,6 +16,7 @@ public class TestGuitar {
                             InstrumentMake.FENDER,
                             InstrumentMaterial.FIBREGLASS,
                             InstrumentType.STRING,
+                            560.00,
                             GuitarType.ELECTRIC,
                             6);
     }

@@ -8,8 +8,9 @@ public class Drum extends Instrument implements IPlay {
 
     private DrumType drumType;
 
-    public Drum(InstrumentColour colour, InstrumentMake make, InstrumentMaterial material, InstrumentType type, DrumType drumType) {
-        super(colour, make, material, type);
+    public Drum(InstrumentColour colour, InstrumentMake make, InstrumentMaterial material,
+                InstrumentType type, double wholeSalePrice, DrumType drumType) {
+        super(colour, make, material, type, wholeSalePrice);
         this.drumType = drumType;
     }
 

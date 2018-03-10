@@ -16,6 +16,7 @@ public class TestPiano {
                             InstrumentMake.STEINWAY,
                             InstrumentMaterial.WOOD,
                             InstrumentType.KEYBOARD,
+                            1540.00,
                             PianoType.UPRIGHT);
     }
 

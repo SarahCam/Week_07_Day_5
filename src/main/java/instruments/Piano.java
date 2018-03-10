@@ -8,8 +8,9 @@ public class Piano extends Instrument implements IPlay {
 
     PianoType pianoType;
 
-    public Piano(InstrumentColour colour, InstrumentMake make, InstrumentMaterial material, InstrumentType type, PianoType pianoType) {
-        super(colour, make, material, type);
+    public Piano(InstrumentColour colour, InstrumentMake make, InstrumentMaterial material,
+                 InstrumentType type, double wholeSalePrice, PianoType pianoType) {
+        super(colour, make, material, type, wholeSalePrice);
         this.pianoType = pianoType;
     }
 
