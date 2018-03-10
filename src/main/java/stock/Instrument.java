@@ -3,7 +3,7 @@ package stock;
 import enums.*;
 import interfaces.ISell;
 
-public class Instrument implements ISell {
+public abstract class Instrument implements ISell {
 
     private InstrumentColour colour;
     private InstrumentMake make;

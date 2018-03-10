@@ -1,3 +1,4 @@
+import instruments.Piano;
 import interfaces.ISell;
 
 import java.util.ArrayList;
@@ -22,5 +23,9 @@ public class Shop {
 
     public int getStockCount() {
         return stockItems.size();
+    }
+
+    public void addStock(ISell stockItem) {
+        stockItems.add(stockItem);
     }
 }
