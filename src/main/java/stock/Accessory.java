@@ -1,8 +1,9 @@
 package stock;
 
 import enums.AccessoryType;
+import interfaces.ISell;
 
-public class Accessory {
+public class Accessory implements ISell {
 
     private String description;
     private AccessoryType accessoryType;
@@ -30,5 +31,10 @@ public class Accessory {
 
     public double getRetailPrice() {
         return retailPrice;
+    }
+
+    @Override
+    public double calculateMarkUp() {
+        return wholeSalePrice * 150/100;
     }
 }

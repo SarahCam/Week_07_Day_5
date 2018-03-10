@@ -47,7 +47,7 @@ public class TestInstrument {
     }
 
     @Test
-    public void canCalculateMarkup() {
+    public void canCalculateMarkup___120Percent() {
         assertEquals(6936.00, instrument1.calculateMarkUp(), 0.01);
     }
 

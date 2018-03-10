@@ -31,6 +31,11 @@ public class TestAccessory {
     }
 
     @Test
+    public void canCalculateMarkup__150Percent() {
+        assertEquals(33.75, accessory.calculateMarkUp(), 0.01);
+    }
+
+    @Test
     public void getRetailPrice__NOT_CALCULATED_YET() {
         assertEquals(0, accessory.getRetailPrice(), 0.01);
     }
