@@ -2,13 +2,15 @@ package instruments;
 
 import enums.*;
 import interfaces.IPlay;
+import stock.Instrument;
 
-public class Guitar implements IPlay {
+public class Guitar extends Instrument implements IPlay {
 
     private GuitarType guitarType;
     private int stringCount;
 
-    public Guitar(GuitarType guitarType, int stringCount) {
+    public Guitar(InstrumentColour colour, InstrumentMake make, InstrumentMaterial material, InstrumentType type, GuitarType guitarType, int stringCount) {
+        super(colour, make, material, type);
         this.guitarType = guitarType;
         this.stringCount = stringCount;
     }

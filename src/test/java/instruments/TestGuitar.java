@@ -12,12 +12,17 @@ public class TestGuitar {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar(GuitarType.ACCOUSTIC, 6);
+        guitar = new Guitar(InstrumentColour.RED,
+                            InstrumentMake.FENDER,
+                            InstrumentMaterial.FIBREGLASS,
+                            InstrumentType.STRING,
+                            GuitarType.ELECTRIC,
+                            6);
     }
 
     @Test
     public void canGetType() {
-        assertEquals(GuitarType.ACCOUSTIC, guitar.getGuitarType());
+        assertEquals(GuitarType.ELECTRIC, guitar.getGuitarType());
     }
 
     @Test
