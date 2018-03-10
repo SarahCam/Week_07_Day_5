@@ -1,6 +1,6 @@
 package instruments;
 
-import enums.DrumType;
+import enums.*;
 import interfaces.IPlay;
 
 public class Drum implements IPlay {

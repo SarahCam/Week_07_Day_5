@@ -1,6 +1,6 @@
 package instruments;
 
-import enums.PianoType;
+import enums.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +12,11 @@ public class TestPiano {
 
     @Before
     public void setUp() throws Exception {
-        piano = new Piano(PianoType.UPRIGHT);
+        piano = new Piano(InstrumentColour.BROWN,
+                InstrumentMake.STEINWAY,
+                InstrumentMaterial.WOOD,
+                InstrumentType.KEYBOARD,
+                PianoType.UPRIGHT);
     }
 
     @Test

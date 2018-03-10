@@ -1,6 +1,6 @@
 package instruments;
 
-import enums.DrumType;
+import enums.*;
 import org.junit.Before;
 import org.junit.Test;
 

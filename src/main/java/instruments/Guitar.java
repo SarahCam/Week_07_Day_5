@@ -1,6 +1,6 @@
 package instruments;
 
-import enums.GuitarType;
+import enums.*;
 import interfaces.IPlay;
 
 public class Guitar implements IPlay {
