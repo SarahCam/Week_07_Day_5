@@ -24,4 +24,19 @@ public class TestInstrument {
     public void canGetColour() {
         assertEquals(InstrumentColour.BLACK, instrument1.getColour());
     }
+
+    @Test
+    public void canGetMake() {
+        assertEquals(InstrumentMake.STEINWAY, instrument1.getMake());
+    }
+
+    @Test
+    public void canGetMaterial() {
+        assertEquals(InstrumentMaterial.WOOD, instrument1.getMaterial());
+    }
+
+    @Test
+    public void canGetInstrumentType() {
+        assertEquals(InstrumentType.KEYBOARD, instrument1.getType());
+    }
 }

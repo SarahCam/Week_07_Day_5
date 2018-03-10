@@ -17,7 +17,7 @@ public class TestGuitar {
 
     @Test
     public void canGetType() {
-        assertEquals(GuitarType.ACCOUSTIC, guitar.getType());
+        assertEquals(GuitarType.ACCOUSTIC, guitar.getGuitarType());
     }
 
     @Test

@@ -5,16 +5,16 @@ import interfaces.IPlay;
 
 public class Guitar implements IPlay {
 
-    private GuitarType type;
+    private GuitarType guitarType;
     private int stringCount;
 
-    public Guitar(GuitarType type, int stringCount) {
-        this.type = type;
+    public Guitar(GuitarType guitarType, int stringCount) {
+        this.guitarType = guitarType;
         this.stringCount = stringCount;
     }
 
-    public GuitarType getType() {
-        return type;
+    public GuitarType getGuitarType() {
+        return guitarType;
     }
 
     public int getStringCount() {
