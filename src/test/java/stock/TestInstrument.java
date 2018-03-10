@@ -42,17 +42,17 @@ public class TestInstrument {
     }
 
     @Test
-    public void getWholeSalePrice() {
+    public void getWholeSalePrice___100Percent() {
         assertEquals(5780.00, instrument1.getWholeSalePrice(), 0.01);
     }
 
     @Test
-    public void canCalculateMarkup___120Percent() {
-        assertEquals(6936.00, instrument1.calculateMarkUp(), 0.01);
+    public void canCalculateMarkup___20Percent() {
+        assertEquals(1156.00, instrument1.calculateMarkUp(), 0.01);
     }
 
     @Test
-    public void getRetailPrice__NOT_CALCULATED_YET() {
-        assertEquals(0, instrument1.getRetailPrice(), 0.01);
+    public void getRetailPrice___WholeSalePricePLUSMarkup___120Percent() {
+        assertEquals(6936.00, instrument1.getRetailPrice(), 0.01);
     }
 }

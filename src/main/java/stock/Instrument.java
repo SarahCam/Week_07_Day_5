@@ -18,7 +18,7 @@ public class Instrument implements ISell {
         this.material = material;
         this.type = type;
         this.wholeSalePrice = wholeSalePrice;
-        this.retailPrice = 0;                    // Initialize to zero/null until we have calculated the markup
+        this.retailPrice = wholeSalePrice + calculateMarkUp();
     }
 
     public InstrumentColour getColour() {
@@ -47,6 +47,6 @@ public class Instrument implements ISell {
 
     @Override
     public double calculateMarkUp() {
-        return wholeSalePrice * 120/100;
+        return wholeSalePrice * 20/100;
     }
 }

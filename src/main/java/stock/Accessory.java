@@ -14,7 +14,7 @@ public class Accessory implements ISell {
         this.description = description;
         this.accessoryType = accessoryType;
         this.wholeSalePrice = wholeSalePrice;
-        this.retailPrice = 0;                    // Initialize to zero/null until we have calculated the markup
+        this.retailPrice = wholeSalePrice + calculateMarkUp();
     }
 
     public String getDescription() {
@@ -35,6 +35,6 @@ public class Accessory implements ISell {
 
     @Override
     public double calculateMarkUp() {
-        return wholeSalePrice * 150/100;
+        return wholeSalePrice * 50/100;
     }
 }

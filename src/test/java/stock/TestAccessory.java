@@ -26,17 +26,17 @@ public class TestAccessory {
     }
 
     @Test
-    public void getWholeSalePrice() {
+    public void getWholeSalePrice___100Percent() {
         assertEquals(22.50, accessory.getWholeSalePrice(), 0.01);
     }
 
     @Test
-    public void canCalculateMarkup__150Percent() {
-        assertEquals(33.75, accessory.calculateMarkUp(), 0.01);
+    public void canCalculateMarkup___50Percent() {
+        assertEquals(11.25, accessory.calculateMarkUp(), 0.01);
     }
 
     @Test
-    public void getRetailPrice__NOT_CALCULATED_YET() {
-        assertEquals(0, accessory.getRetailPrice(), 0.01);
+    public void getRetailPrice___WholeSalePricePLUSMarkup___150Percent() {
+        assertEquals(33.75, accessory.getRetailPrice(), 0.01);
     }
 }
