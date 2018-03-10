@@ -40,4 +40,19 @@ public class TestInstrument {
     public void canGetInstrumentType() {
         assertEquals(InstrumentType.KEYBOARD, instrument1.getType());
     }
+
+    @Test
+    public void getWholeSalePrice() {
+        assertEquals(5780.00, instrument1.getWholeSalePrice(), 0.01);
+    }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(6936.00, instrument1.calculateMarkUp(), 0.01);
+    }
+
+    @Test
+    public void getRetailPrice__NOT_CALCULATED_YET() {
+        assertEquals(0, instrument1.getRetailPrice(), 0.01);
+    }
 }

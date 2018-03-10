@@ -37,6 +37,14 @@ public class Instrument implements ISell {
         return type;
     }
 
+    public double getWholeSalePrice() {
+        return wholeSalePrice;
+    }
+
+    public double getRetailPrice() {
+        return retailPrice;
+    }
+
     @Override
     public double calculateMarkUp() {
         return wholeSalePrice * 120/100;
