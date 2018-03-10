@@ -69,4 +69,11 @@ public class TestShop {
         assertEquals(1, shop.getStockCount());
         assert(shop.getStockItems().get(0) instanceof Accessory);
     }
+
+    @Test
+    public void canGetPotentialProfit() {
+        shop.addStockItem(piano);
+        shop.addStockItem(musicSheet);
+        assertEquals(313.25, shop.getPotentialProfit(), 0.01);
+    }
 }
