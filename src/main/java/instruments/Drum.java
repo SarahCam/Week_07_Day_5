@@ -2,12 +2,14 @@ package instruments;
 
 import enums.*;
 import interfaces.IPlay;
+import stock.Instrument;
 
-public class Drum implements IPlay {
+public class Drum extends Instrument implements IPlay {
 
     private DrumType drumType;
 
-    public Drum(DrumType drumType) {
+    public Drum(InstrumentColour colour, InstrumentMake make, InstrumentMaterial material, InstrumentType type, DrumType drumType) {
+        super(colour, make, material, type);
         this.drumType = drumType;
     }
 

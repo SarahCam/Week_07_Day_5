@@ -12,7 +12,11 @@ public class TestDrum {
 
     @Before
     public void setUp() throws Exception {
-        drum = new Drum(DrumType.SNARE);
+        drum = new Drum(InstrumentColour.BLACK,
+                        InstrumentMake.YAMAHA,
+                        InstrumentMaterial.FIBREGLASS,
+                        InstrumentType.PERCUSSION,
+                        DrumType.SNARE);
     }
 
     @Test

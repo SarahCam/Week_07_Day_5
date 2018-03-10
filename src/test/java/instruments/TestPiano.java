@@ -12,11 +12,11 @@ public class TestPiano {
 
     @Before
     public void setUp() throws Exception {
-        piano = new Piano(InstrumentColour.BROWN,
-                InstrumentMake.STEINWAY,
-                InstrumentMaterial.WOOD,
-                InstrumentType.KEYBOARD,
-                PianoType.UPRIGHT);
+        piano = new Piano(  InstrumentColour.BROWN,
+                            InstrumentMake.STEINWAY,
+                            InstrumentMaterial.WOOD,
+                            InstrumentType.KEYBOARD,
+                            PianoType.UPRIGHT);
     }
 
     @Test
